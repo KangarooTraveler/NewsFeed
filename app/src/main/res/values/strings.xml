@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">News feed</string>
+    <string name="search_et">Search</string>
+    <string name="rb_business_category">Business</string>
+    <string name="rb_entertainment_category">Entertainment</string>
+    <string name="rb_general_category">General</string>
+    <string name="rb_health_category">Health</string>
+    <string name="rb_science_category">Science</string>
+    <string name="rb_sports_category">Sports</string>
+    <string name="rb_technology_category">Technology</string>
+    <string name="connection_message">Please, check internet connection</string>
+</resources>

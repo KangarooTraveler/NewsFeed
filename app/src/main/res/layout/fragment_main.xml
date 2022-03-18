@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainFragment">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_et"
+        android:hint="@string/search_et"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:singleLine="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSearch">
+
+        <RadioGroup
+            android:id="@+id/rbGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="20dp">
+
+            <RadioButton
+                android:id="@+id/rbBusiness"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/rb_business_category"
+                android:button="@android:color/transparent"
+                android:background="@drawable/rb_selector"
+                android:textColor="@drawable/rb_text_selector"
+                android:paddingHorizontal="10dp"
+                android:layout_marginEnd="6dp"/>
+
+            <RadioButton
+                android:id="@+id/rbEntertainment"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/rb_entertainment_category"
+                android:button="@android:color/transparent"
+                android:background="@drawable/rb_selector"
+                android:textColor="@drawable/rb_text_selector"
+                android:paddingHorizontal="10dp"
+                android:layout_marginEnd="6dp"/>
+
+            <RadioButton
+                android:id="@+id/rbGeneral"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/rb_general_category"
+                android:button="@android:color/transparent"
+                android:background="@drawable/rb_selector"
+                android:textColor="@drawable/rb_text_selector"
+                android:paddingHorizontal="10dp"
+                android:layout_marginEnd="6dp"
+                />
+
+            <RadioButton
+                android:id="@+id/rbHealth"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/rb_health_category"
+                android:button="@android:color/transparent"
+                android:background="@drawable/rb_selector"
+                android:textColor="@drawable/rb_text_selector"
+                android:paddingHorizontal="10dp"
+                android:layout_marginEnd="6dp"/>
+
+            <RadioButton
+                android:id="@+id/rbScience"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/rb_science_category"
+                android:button="@android:color/transparent"
+                android:background="@drawable/rb_selector"
+                android:textColor="@drawable/rb_text_selector"
+                android:paddingHorizontal="10dp"
+                android:layout_marginEnd="6dp"/>
+
+            <RadioButton
+                android:id="@+id/rbSports"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/rb_sports_category"
+                android:button="@android:color/transparent"
+                android:background="@drawable/rb_selector"
+                android:textColor="@drawable/rb_text_selector"
+                android:paddingHorizontal="10dp"
+                android:layout_marginEnd="6dp"/>
+
+            <RadioButton
+                android:id="@+id/rbTechnology"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/rb_technology_category"
+                android:button="@android:color/transparent"
+                android:background="@drawable/rb_selector"
+                android:textColor="@drawable/rb_text_selector"
+                android:paddingHorizontal="10dp"
+                android:layout_marginEnd="6dp"/>
+
+        </RadioGroup>
+
+    </HorizontalScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

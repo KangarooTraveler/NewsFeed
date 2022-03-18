@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Лента новостей</string>
+    <string name="search_et">Поиск</string>
+    <string name="rb_business_category">Бизнес</string>
+    <string name="rb_entertainment_category">Развлечение</string>
+    <string name="rb_general_category">Общие</string>
+    <string name="rb_health_category">Здоровье</string>
+    <string name="rb_science_category">Наука</string>
+    <string name="rb_sports_category">Спорт</string>
+    <string name="rb_technology_category">Технологии</string>
+    <string name="connection_message">Проверьте соединение с интернетом</string>
+</resources>
